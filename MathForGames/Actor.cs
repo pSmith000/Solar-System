@@ -184,8 +184,8 @@ namespace MathForGames
         public virtual void Draw()
         {
             if (_sprite != null)
-                _sprite.Draw(_localTransform);
-            Collider.Draw();
+                _sprite.Draw(GlobalTransform);
+            //Collider.Draw();
         }
 
         public void End()
